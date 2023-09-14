@@ -72,10 +72,10 @@ function displayData(newData){
     const weatherInfo = document.querySelectorAll(".info");
     document.querySelector('.condition').textContent = newData.condition;
     document.querySelector('.location').textContent = `${newData.location}, ${newData.region}`;
-    document.querySelector('.temperature').textContent = newData.currentTemp.c;
-    document.querySelector('.feels-like').textContent = `Feels like: ${newData.feelslike_c}`;
+    document.querySelector('.temperature').textContent = `${newData.currentTemp.c}°C`;
+    document.querySelector('.feels-like').textContent = `Feels like: ${newData.feelsLike.c}°C`;
     document.querySelector('.uv-index').textContent = `UV Index: ${newData.uvIndex}`;
-    document.querySelector('.humidity').textContent = `Humidity: ${newData.humidity}`;
+    document.querySelector('.humidity').textContent = `Humidity: ${newData.humidity}%`;
 }
 
 function resetForm(){

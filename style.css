@@ -1,0 +1,147 @@
+:root{
+    margin: 0;
+    padding: 0;
+    --dark-color: rgb(81, 17, 67);
+    --light-color: rgb(193, 185, 217);
+}
+
+body{
+    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 10vh 80vh;
+}
+
+.logo{
+    font-size: 30px;
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p{
+    font-size: 20px;
+}
+
+.error{
+    display: none;
+}
+
+.error-active{
+    padding-top: 8px;
+    color: red;
+}
+
+#search-bar{
+    height: 30px;
+    width: 200px;
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    background-color: var(--light-color);
+}
+
+.submit-button{
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.weather-display{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+}
+
+.info-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.condition{
+    border: 2px solid var(--dark-color);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.location{
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.feels-like{
+    border: 2px solid var(--dark-color);
+    border-radius: 18px;
+    height: 35px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.temperature{
+    font-size: 20px;
+    border: 2px solid var(--dark-color);
+    border-radius: 32px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uv-index{
+    border: 2px solid var(--dark-color);
+    border-radius: 18px;
+    height: 35px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.humidity{
+    border: 2px solid var(--dark-color);
+    border-radius: 18px;
+    height: 35px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
